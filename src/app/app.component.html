@@ -1,7 +1,13 @@
 <nav>
   <a [routerLink]="['/home']">Home</a>
-  <a [routerLink]="['/dont-get-cowt']">Don't Get Cowt</a>
-  <a [routerLink]="['/fingerball-world-cup']">Fingerball World Cup</a>
+  
+  <div class="dropdown">
+    <a href="#">🎮 My Games</a>
+    <div class="dropdown-content">
+      <a [routerLink]="['/dont-get-cowt']">Don't Get Cowt</a>
+      <a [routerLink]="['/fingerball-world-cup']">Fingerball World Cup</a>
+    </div>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>
